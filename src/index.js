@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route, NavLink,Link } from 'react-rout
 import './index.css';
 import App from './App';
 import T1q2 from './task_1/T1q2';
+import Task_2 from './task_2/Task_2';
+import DRoute from './task_2/DRoute';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,15 +20,16 @@ root.render(
         <li>
           <Link to="/task_1/T1q2">T1Q2</Link>
         </li>
-        {/* <li>
-          <NavLink to="/mcode">Morse code converter</NavLink>
-        </li> */}
+        <li>
+          <NavLink to="/task2">Task 2</NavLink>
+        </li>
       </ul>
     </div>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/task_1/T1q2" element={<T1q2 />} />
-      {/* <Route path='/mcode' element={<MorseCode />} /> */}
+      <Route path='/task2' element={<Task_2 />} />
+      <Route path='/task2/:cmp' element={<DRoute />} />
       <Route path='*' element={<h1>Error 404</h1>} />
     </Routes>
   </Router>
