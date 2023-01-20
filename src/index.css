@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.active{
+  color: darkgoldenrod;
+}
+
+.Navul,.Navul li{
+  display: inline-flex;
+  padding-left: 15px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.Navdiv{
+  background-color: cyan;
+}
