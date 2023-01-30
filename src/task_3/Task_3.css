@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    margin : 10px;
+    justify-items: center;
+    background-color: lightgray;
+}
+
+.addTask{
+    background: transparent;
+    border-color: green;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+.addTask:hover{
+    cursor: grab;
+    background-color: rgb(59, 211, 39);
+}
+
+.delTask{
+    background: transparent;
+    border-color: yellow;
+    padding: 7px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+.delTask:hover{
+    cursor: grab;
+    background-color: yellow
+}
+
+.taskItem{
+    margin-top: 5px;
+}
