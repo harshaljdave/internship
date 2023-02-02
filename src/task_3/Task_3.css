@@ -7,12 +7,13 @@
 
 .addTask{
     background: transparent;
-    border-color: green;
+    border-color: rgb(24, 202, 24);
     padding: 7px;
     margin-top: 10px;
     margin-left: 100px;
     border-radius: 7px;
     border-style: solid;
+    border-collapse: collapse;
 }
 
 .addTask:hover{
@@ -26,11 +27,28 @@
     padding: 7px;
     border-radius: 7px;
     border-style: solid;
+    border-collapse: collapse;
+    margin-right: 5px;
 }
 
 .delTask:hover{
     cursor: grab;
-    background-color: yellow
+    background-color: yellow;
+    color : red;
+}
+
+.editTask{
+    background: transparent;
+    border-color: black;
+    padding: 7px;
+    border-radius: 7px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.editTask:hover{
+    cursor: grab;
+    background-color: white;
 }
 
 .taskItem{
