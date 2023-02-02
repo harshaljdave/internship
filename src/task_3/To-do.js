@@ -18,7 +18,10 @@ const Todo = () => {
             // console.log(tin)
             let id = parseInt(editID);
             // setTask(prev => prev.map(item => (item.tid === todoId ? newValue : item)));
+            
             setTask(tasks => tasks.map(atask => (atask.id === id ? {id,task}:atask)));
+            
+            
             setTin('');
             setEditing(false);
             setEditID();
@@ -50,7 +53,6 @@ const Todo = () => {
 
     return (
         <div className='container'>
-            {console.log(tasks)}
             <h1>TO DO LIST</h1>
             <form onSubmit={TaskSubmit}>
                 <h3 style={{ display:"inline" }}>Task: </h3>
@@ -60,7 +62,8 @@ const Todo = () => {
             <div>
                 <ul>
                     {tasks.map((t) => (
-                        <li className="taskItem" key={t.id} id={t.id}>
+                        <li className="taskItem"
+                            key={t.id} id={t.id}>
                             {t.task}{"  "}
                             <input type="button" onClick={deltask} className='delTask' name={t.id} value="Delete" />
                             <input type="button" onClick={edittask} className='editTask' name={t.id} value="Edit" />

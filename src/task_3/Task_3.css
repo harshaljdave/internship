@@ -17,7 +17,7 @@
 }
 
 .addTask:hover{
-    cursor: grab;
+    cursor: pointer;
     background-color: rgb(59, 211, 39);
 }
 
@@ -29,10 +29,11 @@
     border-style: solid;
     border-collapse: collapse;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .delTask:hover{
-    cursor: grab;
+    cursor: pointer;
     background-color: yellow;
     color : red;
 }
@@ -47,7 +48,7 @@
 }
 
 .editTask:hover{
-    cursor: grab;
+    cursor: pointer;
     background-color: white;
 }
 
