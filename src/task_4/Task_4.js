@@ -1,9 +1,11 @@
 import React from 'react'
+import Sign_upForm from './Sign_up_form'
 
 function Task_4() {
     return (
-        <h1>Task_4</h1>
-
+        <>
+            <Sign_upForm />
+        </>
     )
 }
 
