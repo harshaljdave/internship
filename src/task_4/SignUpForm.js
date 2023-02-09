@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { TextField, Radio, RadioGroup, FormControl, FormControlLabel, FormLabel, FormHelperText, Checkbox, FormGroup, Button, Typography } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2/Grid2';
 
-const Sign_upForm = () => {
+const SignUpForm = () => {
 
   //States
   const [formdata, setFormdata] = useState({
@@ -57,7 +57,7 @@ const Sign_upForm = () => {
 
   //Compare passwords
   const compare_passwords = e => {
-    if (e.target.name = 'password') {
+    if (e.target.name == 'password') {
       if (e.target.value != formdata.cPassword && formdata.cPassword != "") {
         setForm_err(form_err => ({ ...form_err, cpsd_err: "Passwords must match" }));
       }
@@ -217,7 +217,7 @@ const Sign_upForm = () => {
     {console.log(first_edit)}
     {!editing ? 
       <div>
-      <p>Edit Mode</p>
+      <p>Filled Information</p>
       <p>{formdata.fname}</p>
       <p>{formdata.lname}</p>
       <p>{formdata.password}</p>
@@ -491,4 +491,4 @@ const Sign_upForm = () => {
 }
 
 
-export default Sign_upForm
+export default SignUpForm

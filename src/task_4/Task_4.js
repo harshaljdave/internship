@@ -1,10 +1,10 @@
 import React from 'react'
-import Sign_upForm from './Sign_up_form'
+import SignUpForm from './SignUpForm'
 
 function Task_4() {
     return (
         <>
-            <Sign_upForm />
+            <SignUpForm />
         </>
     )
 }
