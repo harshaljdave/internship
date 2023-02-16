@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 
 const Todo = () => {
     const [tid, setId] = useState(0);
@@ -16,11 +16,8 @@ const Todo = () => {
         if (editing) {
 
             // console.log(tin)
-            let id = parseInt(editID);
-            // setTask(prev => prev.map(item => (item.tid === todoId ? newValue : item)));
-            
+            let id = parseInt(editID);            
             setTask(tasks => tasks.map(atask => (atask.id === id ? {id,task}:atask)));
-            
             
             setTin('');
             setEditing(false);
@@ -53,6 +50,7 @@ const Todo = () => {
 
     return (
         <div className='container'>
+            {console.log(tasks)}
             <h1>TO DO LIST</h1>
             <form onSubmit={TaskSubmit}>
                 <h3 style={{ display:"inline" }}>Task: </h3>

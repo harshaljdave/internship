@@ -1,0 +1,57 @@
+/* .container{
+    display: grid;
+    margin : 10px;
+    justify-items: center;
+    background-color: lightgray;
+}
+
+.addTask{
+    background: transparent;
+    border-color: rgb(24, 202, 24);
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 7px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.addTask:hover{
+    cursor: pointer;
+    background-color: rgb(59, 211, 39);
+}
+
+.delTask{
+    background: transparent;
+    border-color: yellow;
+    padding: 7px;
+    border-radius: 7px;
+    border-style: solid;
+    border-collapse: collapse;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.delTask:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color : red;
+}
+
+.editTask{
+    background: transparent;
+    border-color: black;
+    padding: 7px;
+    border-radius: 7px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.editTask:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.taskItem{
+    margin-top: 5px;
+} */
